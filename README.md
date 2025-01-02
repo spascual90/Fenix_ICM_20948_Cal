@@ -11,6 +11,12 @@ pip install tk
 
 pip install pyserial
 
+pip install numpy
+
+pip install matplotlib
+
+pip install scipy
+
 # Quick Start Guide:
 1. Connect Autopilot with IMU configuration: ICM_20948 (Sparkfun)
 2. Press "Scan Serial Ports" to search for a COM port where Fenix is connected. Press "Connect".
