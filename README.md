@@ -6,7 +6,9 @@ Prerequisites:
 This is a Python 3.12.4 application. Python IDLE 3.12 has to be installed in your computer.
 
 To install the different modules required type in cmd: 
+
 pip install tk
+
 pip install pyserial
 
 # Quick Start Guide:
