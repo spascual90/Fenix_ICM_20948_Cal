@@ -10,11 +10,15 @@ To install the different modules you need:
 1. Open the command prompt (in Windows, go to the Start Menu and type "cmd").
 2. Run pip for each module you need to install:
 
-pip install tk 
-pip install pyserial 
-pip install numpy 
-pip install matplotlib 
-pip install scipy 
+pip install tk
+
+pip install pyserial
+
+pip install numpy
+
+pip install matplotlib
+
+pip install scipy
 
 Another way to install is to use requirements.txt file to install everything.
 1. Open the command prompt (in Windows, go to the Start Menu and type "cmd").
