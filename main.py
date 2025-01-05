@@ -404,7 +404,7 @@ class GUI:
     def generatePEMC12_button_command(self):
         # Set desired sensor
         if self.selected_sensor.get() == '-':
-            sensor_list = ['G', 'M', 'A']
+            sensor_list = ['G', 'A', 'M']
         else:
             sensor_list = self.selected_sensor.get()
         for x in sensor_list:
@@ -758,9 +758,10 @@ class SerialPortManager:
             self.Figure_buffer=np.append(self.Figure_buffer, fields)
             return
 
-        if self.line[:10]=="$PEMC,12,O":
+        if self.line[:9]=="$PEMC,12,":
             #Check if saving data is required
             if self.data.size >0:
+                #print("data!=0\n")
                 self.data = self.data.reshape(-1, 3)
                 np.savetxt(self.new_file, self.data, fmt='%s', delimiter=',')
                 print(f'File saved:{self.new_file}\n')
